@@ -1,0 +1,210 @@
+/* General Button Styling */
+.btn {
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 10px 0;
+}
+
+/* Button Overlay Effect */
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Primary Button Style */
+.primary-btn {
+  background: linear-gradient(135deg, #42a5f5, #478ed1, #1e88e5);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(66, 165, 245, 0.4);
+}
+
+.primary-btn:hover {
+  background: linear-gradient(135deg, #1e88e5, #478ed1, #42a5f5);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(66, 165, 245, 0.5);
+}
+
+/* Secondary Button Style */
+.secondary-btn {
+  background: linear-gradient(135deg, #ff8a65, #ff7043, #ff5722);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(255, 138, 101, 0.4);
+}
+
+.secondary-btn:hover {
+  background: linear-gradient(135deg, #ff5722, #ff7043, #ff8a65);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(255, 138, 101, 0.5);
+}
+
+/* Add to Cart Button Style */
+.add-to-cart-btn {
+  background: linear-gradient(135deg, #87ceeb, #00bfff, #1e90ff);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(135, 206, 235, 0.4);
+}
+
+.add-to-cart-btn:hover {
+  background: linear-gradient(135deg, #1e90ff, #00bfff, #87ceeb);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(135, 206, 235, 0.5);
+}
+
+/* Reset Button Style */
+.reset-btn {
+  background: linear-gradient(135deg, #ef5350, #e53935, #d32f2f);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(239, 83, 80, 0.4);
+}
+
+.reset-btn:hover {
+  background: linear-gradient(135deg, #d32f2f, #e53935, #ef5350);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(239, 83, 80, 0.5);
+}
+
+/* Home Page Button Container */
+.home-page button {
+  width: 100%;
+  margin: 10px 0;
+}
+
+/* Filters Button */
+.filters button {
+  width: 100%;
+  margin: 20px 0;
+}
+
+/* Home Page Styling */
+.banner-img {
+  margin-top: 60px;
+}
+
+.home-page h1 {
+  color: rgb(35, 65, 233);
+  font-family: "Playfair Display", serif;
+}
+
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+.home-page .card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 18rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home-page .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.home-page .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.home-page .card-price {
+  color: green;
+  font-weight: bold;
+}
+
+.home-page .card-text {
+  color: rgb(90, 89, 89);
+  padding: 10px;
+}
+
+.home-page .card img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.home-page .card img:hover {
+  transform: scale(1.1);
+}
+
+.home-page .card-img-top {
+  height: 300px !important;
+  object-fit: cover;
+}
+
+/* Card Button Styling */
+.card .btn {
+  margin: 5px 0;
+}
+
+.card .btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Filters Section Styling */
+.filters h4 {
+  margin-top: 50px;
+  color: gray !important;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.337);
+}
+
+.ant-checkbox-wrapper:first-of-type {
+  margin-left: 8px;
+}
+
+.ant-checkbox-wrapper {
+  margin: 2px;
+}
+
+.ant-radio-wrapper {
+  margin-bottom: 5px !important;
+  margin-left: 10px;
+}
+
+.loadmore {
+  color: #2ecc71;
+  font-weight: bold;
+  font-size: 20px !important;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.loadmore:hover {
+  color: #27ae60;
+  transform: scale(1.1);
+}
